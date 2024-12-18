@@ -1,0 +1,269 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif sans;
+}
+
+
+
+/* global styles */
+:root {
+  --clr-primary-400: hsl(213, 84%, 40%);
+  --clr-primary-800: hsl(213, 54%, 80%);
+  --clr-primary-900: hsl(213, 34%, 87%);
+
+  --clr-neutral-100: hsl(0, 9%, 7%);
+  --clr-neutral-300: hsl(0, 0%, 30%);
+  --clr-neutral-700: hsl(190, 2%, 51%);
+  --clr-neutral-800: hsl(0, 9%, 94%);
+  --clr-neutral-900: hsl(0, 9%, 97%);
+
+  --fs-large: 1.5rem;
+  --fw-normal: 400;
+  --fw-bold: 800;
+}
+
+main {
+  grid-area: main;
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+
+  padding-bottom: 8rem;
+  padding-top: 4rem;
+
+}
+
+
+
+body {
+  top: 0px;
+  left: 0px;
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer';
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #3DE07E; 
+ /* background-color: #3DE07E;*/
+  text-align: center;
+ /* padding: 10px;*/
+  justify-content: center;      
+  list-style: none;
+  /* align-items: start;*/
+  /*background-image: url("poster.png");*/
+  background-repeat: no-repeat;
+  li {
+        text-align: start;
+      justify-content: top; 
+  }
+
+.header-caption h1 {
+       text-align: center;
+      justify-content: center; 
+    font-size: 102px;
+  }
+}
+
+
+@media (max-width: 600px) {
+.main {
+
+  background-color: black;
+  /*padding: 10px;*/
+  text-align: center;
+  gap: 2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+
+  padding-bottom: 8rem;
+  padding-top: 4rem;
+}
+  }
+
+
+@media (max-width: 600px) {
+  body {
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .header-caption {
+    text-align: center;
+   justify-content: center; 
+    font-size: 51px;
+
+}
+}
+
+/* Block styles */
+.card {
+  display: grid;
+  background: var( --clr-neutral-100);
+  color:hsl(0, 9%, 97%);
+  border: 1px solid var( --clr-neutral-100);
+ /* border-radius: 0.5rem;*/
+  overflow: hidden;
+  text-align: left;
+
+  > * + * {
+    padding-inline: 1rem;
+  }
+
+  h2 {
+    font-size: var(--fs-large);
+    padding-block: 1rem;
+   
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    color: var(--clr-neutral-300);
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: none;
+    }
+
+    &::before {
+      content: " * ";
+    }
+  }
+
+  footer {
+    padding-block-end: 1rem;
+
+    > p {
+      color: blueviolet;
+    }
+  }
+
+  .faded {
+    background-color: var(--clr-neutral-300);
+  }
+}
+
+button {
+color: white;
+background-color: red;
+}
+
+
+.hero {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  background-color: bisque;
+
+  img {
+   aspect-ratio: (0, 1 ,1);
+    width: 50%;
+   
+  }
+
+  h2 {
+    text-align: start;
+    padding: 2rem;
+    font-size: 2rem;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+     
+    img {
+      width: 100%;
+    
+    }
+  }
+}
+
+
+.footer {
+ grid-area: footer;
+background: rgb(47, 45, 45);
+height: 10rem;
+/*margin-top: 2rem;*/
+padding: 2rem;
+
+ul {
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+display: flex;
+
+justify-content: space-around;
+color:white;
+
+.Social-media {
+  display: flex;
+}
+
+img {
+    height: 1.5rem;
+    
+}
+}
+
+/*.main:nth-child(10)*/
+.card-1 {
+  grid-column: 1 / span 2;
+  flex-grow: 3;
+  justify-content: center;   
+  padding-inline: var(--clr-neutral-300);
+  margin-left: 50%;
+  width: 100%;
+  color: var( --clr-neutral-100);
+  background-color: var(--clr-neutral-900);
+  
+}
+/*.main:nth-child(11)*/
+.card-2 {
+  grid-column: 3 / span 2;
+  flex-grow: 3;
+  justify-content: center; 
+  margin-left: 50%;
+  width: 100%;
+ color: var( --clr-neutral-100);
+  background-color: var( --clr-neutral-900);
+   
+}
+
+
