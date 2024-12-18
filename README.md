@@ -1,7 +1,7 @@
 # Lexicon - Front-end course 2024/25
 This repository is intended for storing exercises completed as part of the course.
 ## List of the exercises:
-1. [16.12.2024 - codeAlong-media-queries](https://github.com/Lexicon-frontend-2024-2025/lecture-16-dec/blob/codeAlong-media-queries/exercises.md)(https://github.com/codeAlong)
+1. [16.12.2024 - codeAlong-media-queries](https://github.com/Lexicon-frontend-2024-2025/lecture-16-dec/blob/codeAlong-media-queries/exercises.md)(https://github.com/codeAlong-suzan)
 1. [12.12.2024 - Poster Shop](https://github.com/poster-shop-cube)
 1. [10.12.2024 - Animations bootcamp](https://github.com/v49-animation-bootcamp)
 1. [02.12.2024 - Get Coding!](https://github.com/topmar/v49-monday)
