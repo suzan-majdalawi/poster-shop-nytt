@@ -6,7 +6,7 @@ This repository is intended for storing exercises completed as part of the cours
 1. [02.12.2024 - Get Coding!](https://github.com/topmar/v49-monday)
 1. [28.11.2024 - Practicing the basics of CSS Selectors](https://github.com/v48-thursday)
 1. [26.11.2024 - Build your own hobby website - semantic tags](https://github.com//v48-tuesday)
-1. [Pancake recipe - interview](https://github.com/interview)
+1. [Pancake recipe - interview](https://github.com/interview-pancake)
 
 
 # Figma - Poster shop imge
